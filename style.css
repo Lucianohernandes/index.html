@@ -1,0 +1,537 @@
+/* ===== RESET ===== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#6388b8,#6388b8);
+    color: white;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* ===== HEADER ===== */
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+    width: 250px;   /* controla o tamanho */
+    height: auto;
+    z-index: 10;    /* fica acima do texto */
+}
+
+
+/* ===== HERO ===== */
+.hero {
+    height: 100vh;
+    padding: 20px;
+    justify-content: center;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.2) 70%),
+        url('img/imgsofa.png') center center / cover no-repeat;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        align-items: flex-end;
+        padding-bottom: 40px;
+
+        background:
+            linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.9)),
+            url('img/imgsofa.png') center center/cover no-repeat;
+    }
+
+    .conteudo h1 {
+        font-size: 26px;
+    }
+}
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.conteudo {
+    max-width: 520px;
+    z-index: 2;
+    animation: fadeUp 0.8s;
+    margin: 0 auto;
+}
+
+.conteudo h1 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.conteudo p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 20px;
+}
+
+.servicos {
+    background: linear-gradient(135deg, #ffffff, #f8f8f8);
+}
+
+/* ===== BOTÕES ===== */
+.acoes {
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    align-items: center;
+}
+
+.btnhero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.btnhero {
+    background: linear-gradient(135deg, #32ff7e, #00c853);
+    color: #fff;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,200,83,0.3);
+    width: 300px;
+  
+}
+
+.beneficios-section{
+    
+}
+
+
+.principal:hover {
+    transform: translateY(-2px);
+}
+
+
+.beneficios-section {
+    padding: 60px 60px;
+    background: linear-gradient(135deg,#fcfcfc, #1056b3);
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.beneficios-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+    
+}
+
+.beneficios-texto h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: black;
+}
+
+.beneficios-texto p {
+    opacity: 0.8;
+    margin-bottom: 25px;
+    text-align: center;
+    color: black;
+}
+
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: rgb(250, 250, 250);
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255,255,255,0.04);
+    padding: 12px 16px;
+    border-radius: 12px;
+    
+}
+
+
+.beneficio i {
+    background: #32be61;
+    color: #f7f7f7;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.btn-whatsapp {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.beneficios-cta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    
+}
+.beneficios-container {
+    max-width: 700px; /* ↓ reduz largura */
+    margin: 0 auto;
+    display: flex; /* troca grid por flex */
+    flex-direction: column; /* empilha tudo */
+    align-items: center; /* centraliza */
+    text-align: center;
+    
+}
+.beneficio {
+    justify-content: center; /* centraliza linha */
+    background-color:#6388b8b0
+}
+.btn-whatsapp {
+    margin: 30px auto 0;
+}
+
+@media (max-width: 768px) {
+    .beneficios-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .beneficio {
+        justify-content: center;
+    }
+
+    .btn-whatsapp {
+        width: 100%;
+    }
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background: #00c853;
+    color: #fff;
+    padding: 16px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+.btn-whatsapp:hover {
+    background: #00b34a;
+}
+
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 14px;
+    padding: 14px;
+}
+
+.icon {
+    min-width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(153, 24, 24, 0.08);
+    border-radius: 12px;
+}
+
+
+
+.texto {
+    font-weight: 600;
+}
+
+/* ===== CARDS ===== */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #00b34a;
+    
+}
+
+.card {
+  text-align: center;
+  padding: 10px;
+  width: 110px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 32px;
+  margin-bottom: 6px;
+}
+
+.card h3 {
+    font-size: 15px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(49, 17, 165, 0.932);
+}
+
+.card h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: rgba(104, 98, 98, 0.75);
+    font-size: 20px;
+    color: #f9fcfa;
+    margin-bottom: 10px;
+    max-width: 220px;
+    
+}
+
+
+
+.card i, .card svg {
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px auto;
+    color: #000000; /* centraliza + espaçamento */
+}
+
+.card svg {
+  color: #922121; /* verde padrão */
+}
+
+/* ===== ICON BOX ===== */
+.icon-box {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #00000088, #6e8879);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+
+
+.icon-box i {
+    color: rgb(255, 255, 255);
+    
+}
+
+/* ===== SERVICES ===== */
+.servicos, .grid, .card {
+    background: #920a0a;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background: linear-gradient(135deg, #f5f5e8, #c8e6c9);
+
+}
+
+
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto); /* muda aqui */
+  gap: 50px;
+
+  justify-content: center; /* CENTRALIZA tudo */
+  max-width: 500px;        /* limita largura */
+  margin: 0 auto;
+}
+
+/* ===== ANTES / DEPOIS ===== */
+.antes-depois {
+    background: linear-gradient(135deg,#fcfcfc, #386aaa00);
+    color: black;
+    
+}
+
+.card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.05);
+  transition: 0.3s;
+}
+
+.card img {
+  width: 42px;
+  margin-bottom: 10px;
+
+  filter: brightness(0) saturate(100%);
+}
+
+.card img {
+  width: 42px;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.08);
+}
+
+.tag {
+    display: inline-block;
+    background: rgba(50,255,126,0.15);
+    color: #32ff7e;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+
+
+/* ===== REVIEWS ===== */
+.reviews {
+    background: #f8f8f8;
+    color: black;
+    text-align: center;
+}
+
+.reviews-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review-card {
+    background: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 280px;
+}
+
+/* ===== CTA ===== */
+.cta {
+    text-align: center;
+}
+
+/* ===== WHATSAPP FLOAT ===== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (min-width: 768px) {
+    .cards {
+        flex-direction: row;
+        justify-content: center;
+        
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  
+}
+
+.images img {
+  width: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px; /* menos espaço entre os cards */
+  max-width: 800px; /* limita largura total */
+  margin: 0 auto; /* centraliza */
+}
+
+.qualidade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.qualidade-box {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+.qualidade-box .item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* CENTRALIZA */
+  gap: 10px;
+}
+.qualidade-box .btn-primary {
+  display: block;
+  margin: 30px auto 0;
+}
+
+
